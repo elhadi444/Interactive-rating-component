@@ -1,0 +1,161 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Ligh-Grey: hsl(217, 12%, 63%);
+    --Mediu-Grey: hsl(216, 12%, 54%);
+    --Ligh-blue: hsl(210, 20%, 22%);
+    --Dar-Blue: hsl(213, 19%, 18%);
+    --Ver-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Ver-Dark-Blue);
+    color: var(--Ligh-Grey);
+    min-height: 100vh;
+}
+
+button{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    max-width: 25.625rem;
+    background-color: var(--Dar-Blue);
+
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.star{
+    margin-bottom: 2rem;
+}
+
+.round-btn, .star {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--Ligh-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-btn{
+    color: var(--Ligh-Grey);  
+}
+
+.round-btn:hover, .round-btn:focus {
+    background-color: var(--Orange);
+    color: white;
+}
+.round-btn.checked{
+    background-color: var(--Mediu-Grey);
+    color: white;
+}
+
+
+h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    width: 100%;
+    padding: .8rem;
+    border-radius: 50px;
+    
+    background-color: var(--Orange);
+    font-size: 1rem;
+
+    color: white;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:hover, .btn:focus{
+    background-color: white;
+    color: var(--Orange);
+}
+
+.hide{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.thank-you{
+    padding: 3rem 1.5rem 0 1.5rem;
+    text-align: center;
+}
+
+.illustration {
+    margin-bottom: 1.5rem;
+}
+
+.rating-test {
+    background-color: var(--Ligh-blue);
+    color: var(--Orange);
+    border-radius: 50px;
+    padding: .4rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.shake{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
