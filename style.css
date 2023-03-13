@@ -37,7 +37,9 @@ button{
     font-weight: bold;
     border: none;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 .card {
     width: 100%;
