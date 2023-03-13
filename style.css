@@ -29,6 +29,7 @@ body {
     background-color: var(--Ver-Dark-Blue);
     color: var(--Ligh-Grey);
     min-height: 100vh;
+    padding: 1rem;
 }
 
 button{
@@ -53,7 +54,7 @@ button{
 
 .round-btn, .star {
     height: 50px;
-    width: 50px;
+    width: 50px; 
     border-radius: 50%;
     background-color: var(--Ligh-blue);
     display: flex;
